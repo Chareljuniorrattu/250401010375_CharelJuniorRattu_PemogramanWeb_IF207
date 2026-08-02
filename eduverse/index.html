@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVerse - Belajar Tanpa Batas</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<!-- ============================================ -->
+<!-- NAVIGASI - Dengan efek glass morphism        -->
+<!-- ============================================ -->
+<nav class="navbar navbar-expand-lg fixed-top nav-glass">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="index.html">
+            <i class="fas fa-brain me-2 text-warning"></i>EduVerse
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto gap-2">
+                <li class="nav-item"><a class="nav-link text-white active" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="pages/about.html">Tentang</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="pages/courses.html">Kursus</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="pages/contact.html">Hubungi</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ============================================ -->
+<!-- HERO - Dengan efek parallax sederhana        -->
+<!-- ============================================ -->
+<header class="hero-wrapper d-flex align-items-center">
+    <div class="container position-relative">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-white">
+                <span class="badge bg-warning text-dark mb-3 px-3 py-2">
+                    <i class="fas fa-rocket me-1"></i> Platform Edukasi #1
+                </span>
+                <h1 class="display-4 fw-bold mb-3">
+                    Temukan <span class="text-warning">Ilmu Baru</span><br />Setiap Hari
+                </h1>
+                <p class="lead mb-4 opacity-75">
+                    Ribuan video, kuis interaktif, dan sertifikat resmi untuk 
+                    perjalanan belajarmu.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="pages/courses.html" class="btn btn-warning btn-lg px-5">
+                        <i class="fas fa-graduation-cap me-2"></i>Mulai Belajar
+                    </a>
+                    <a href="#videoPreview" class="btn btn-outline-light btn-lg px-4">
+                        <i class="fas fa-play-circle me-2"></i>Lihat Demo
+                    </a>
+                </div>
+                <div class="mt-4 d-flex gap-4">
+                    <div><span class="fw-bold fs-4 text-warning">10K+</span> <span class="opacity-75">Siswa</span></div>
+                    <div><span class="fw-bold fs-4 text-warning">200+</span> <span class="opacity-75">Video</span></div>
+                    <div><span class="fw-bold fs-4 text-warning">50+</span> <span class="opacity-75">Materi</span></div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="https://placehold.co/600x400/4A6CF7/FFFFFF?text=EduVerse+Illustration" 
+                     alt="Ilustrasi Edukasi" class="img-fluid floating-img" />
+            </div>
+        </div>
+    </div>
+    <!-- Decorative shapes -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+</header>
+
+<!-- ============================================ -->
+<!-- LAYANAN / FITUR UTAMA                       -->
+<!-- ============================================ -->
+<section class="py-5 bg-light" id="layanan">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">
+                <i class="fas fa-star me-1"></i> Layanan Kami
+            </span>
+            <h2 class="fw-bold mt-3">Kenapa Harus <span class="text-primary">EduVerse</span>?</h2>
+            <p class="text-muted">Belajar jadi lebih menyenangkan dengan berbagai fitur interaktif</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="service-card p-4 text-center">
+                    <div class="icon-box bg-primary bg-opacity-10 text-primary mx-auto mb-3">
+                        <i class="fas fa-video fa-2x"></i>
+                    </div>
+                    <h5>Video HD</h5>
+                    <p class="text-muted small">Kualitas video jernih dengan animasi menarik</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card p-4 text-center">
+                    <div class="icon-box bg-success bg-opacity-10 text-success mx-auto mb-3">
+                        <i class="fas fa-puzzle-piece fa-2x"></i>
+                    </div>
+                    <h5>Kuis Interaktif</h5>
+                    <p class="text-muted small">Uji pemahaman dengan soal-soal menantang</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card p-4 text-center">
+                    <div class="icon-box bg-warning bg-opacity-10 text-warning mx-auto mb-3">
+                        <i class="fas fa-certificate fa-2x"></i>
+                    </div>
+                    <h5>Sertifikat</h5>
+                    <p class="text-muted small">Dapatkan sertifikat setelah menyelesaikan kursus</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- VIDEO & AUDIO PREVIEW                       -->
+<!-- ============================================ -->
+<section class="py-5" id="videoPreview">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5><i class="fas fa-film text-danger me-2"></i>Video Pembelajaran</h5>
+                        <div class="ratio ratio-16x9">
+                            <video controls class="rounded">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                                Browser tidak mendukung video.
+                            </video>
+                        </div>
+                        <p class="text-muted small mt-2">
+                            <i class="fas fa-info-circle me-1"></i> Contoh video: Pengenalan HTML
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <h5><i class="fas fa-podcast text-success me-2"></i>Podcast Edukasi</h5>
+                        <div class="bg-light p-4 rounded">
+                            <audio controls class="w-100">
+                                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                                Browser tidak mendukung audio.
+                            </audio>
+                            <p class="text-muted small mt-3">
+                                <i class="fas fa-headphones me-1"></i> Episode: "Belajar di Era Digital"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- KURSUS POPULER - Dengan JavaScript Dynamic   -->
+<!-- ============================================ -->
+<section class="py-5 bg-light" id="kursusPopuler">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-2">
+                <i class="fas fa-fire me-1"></i> Populer
+            </span>
+            <h2 class="fw-bold mt-3">Kursus <span class="text-danger">Paling Diminati</span></h2>
+        </div>
+        <div class="row g-4" id="courseContainer">
+            <!-- Dinamis dari JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- STATISTIK - Dengan efek angka berjalan       -->
+<!-- ============================================ -->
+<section class="py-5 stats-section text-white">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-6 col-md-3">
+                <div class="stat-item">
+                    <h3 class="display-4 fw-bold stat-number" data-target="12500">0</h3>
+                    <p class="opacity-75">Siswa Aktif</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-item">
+                    <h3 class="display-4 fw-bold stat-number" data-target="280">0</h3>
+                    <p class="opacity-75">Total Kursus</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-item">
+                    <h3 class="display-4 fw-bold stat-number" data-target="1500">0</h3>
+                    <p class="opacity-75">Sertifikat Diterbitkan</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-item">
+                    <h3 class="display-4 fw-bold stat-number" data-target="98">0</h3>
+                    <p class="opacity-75">% Kepuasan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- DAFTAR MATERI (LIST & TABLE)                -->
+<!-- ============================================ -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <h4 class="fw-bold mb-3"><i class="fas fa-list-ul text-primary me-2"></i>Materi Unggulan</h4>
+                <ul class="list-group list-group-flush shadow-sm">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-code text-danger me-2"></i>Dasar Pemrograman</span>
+                        <span class="badge bg-danger rounded-pill">12 Video</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-calculator text-primary me-2"></i>Matematika Terapan</span>
+                        <span class="badge bg-primary rounded-pill">10 Video</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-flask text-success me-2"></i>Eksperimen Sains</span>
+                        <span class="badge bg-success rounded-pill">8 Video</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-language text-info me-2"></i>Bahasa Inggris</span>
+                        <span class="badge bg-info rounded-pill">15 Video</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="fw-bold mb-3"><i class="fas fa-table text-success me-2"></i>Statistik Kursus</h4>
+                <div class="table-responsive shadow-sm rounded">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Kategori</th>
+                                <th>Jumlah Video</th>
+                                <th>Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><span class="badge bg-danger">Programming</span></td>
+                                <td>45</td>
+                                <td><span class="badge bg-warning text-dark">Intermediate</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><span class="badge bg-primary">Matematika</span></td>
+                                <td>30</td>
+                                <td><span class="badge bg-success">Pemula</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><span class="badge bg-success">Sains</span></td>
+                                <td>25</td>
+                                <td><span class="badge bg-danger">Mahir</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><span class="badge bg-info">Bahasa</span></td>
+                                <td>20</td>
+                                <td><span class="badge bg-success">Pemula</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- FOOTER                                      -->
+<!-- ============================================ -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h5 class="fw-bold"><i class="fas fa-brain text-warning me-2"></i>EduVerse</h5>
+                <p class="text-muted small">Platform edukasi digital yang menghubungkan pelajar dengan ilmu pengetahuan melalui teknologi.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white-50 hover-text-warning"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white-50 hover-text-warning"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white-50 hover-text-warning"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="#" class="text-white-50 hover-text-warning"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h6 class="fw-bold">Menu</h6>
+                <ul class="list-unstyled small">
+                    <li><a href="index.html" class="text-white-50 text-decoration-none">Beranda</a></li>
+                    <li><a href="pages/about.html" class="text-white-50 text-decoration-none">Tentang</a></li>
+                    <li><a href="pages/courses.html" class="text-white-50 text-decoration-none">Kursus</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="fw-bold">Kontak</h6>
+                <ul class="list-unstyled small text-white-50">
+                    <li><i class="fas fa-map-marker-alt me-2"></i>Tangerang, Indonesia</li>
+                    <li><i class="fas fa-phone me-2"></i>+62 838 9543 3600</li>
+                    <li><i class="fas fa-envelope me-2"></i>info@eduverse.com</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h6 class="fw-bold">Newsletter</h6>
+                <div class="input-group">
+                    <input type="email" class="form-control form-control-sm" placeholder="Email Anda" />
+                    <button class="btn btn-warning btn-sm">Kirim</button>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="text-center text-muted small">
+            &copy; 2026 EduVerse. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
