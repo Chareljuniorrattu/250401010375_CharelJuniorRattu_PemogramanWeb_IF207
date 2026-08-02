@@ -1,0 +1,232 @@
+/* =============================================
+   FONT & RESET
+   ============================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    padding-top: 70px;
+    background: #f8faff;
+}
+
+/* =============================================
+   NAVBAR GLASS MORPHISM
+   ============================================= */
+.nav-glass {
+    background: rgba(10, 10, 30, 0.85) !important;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 12px 0;
+}
+
+.nav-glass .nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 8px 18px !important;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.nav-glass .nav-link:hover,
+.nav-glass .nav-link.active {
+    background: rgba(255, 193, 7, 0.15);
+    color: #ffc107 !important;
+    opacity: 1;
+}
+
+.nav-glass .nav-link.active {
+    background: rgba(255, 193, 7, 0.2);
+}
+
+/* =============================================
+   HERO SECTION
+   ============================================= */
+.hero-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(145deg, #0a0a1a 0%, #1a1a3e 50%, #0d0d2b 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.floating-img {
+    animation: floatY 6s ease-in-out infinite;
+}
+
+@keyframes floatY {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.05;
+}
+
+.shape-1 {
+    width: 500px;
+    height: 500px;
+    background: #ffc107;
+    top: -100px;
+    right: -150px;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 300px;
+    background: #4A6CF7;
+    bottom: -50px;
+    left: -100px;
+}
+
+/* =============================================
+   SERVICE CARDS
+   ============================================= */
+.service-card {
+    background: white;
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =============================================
+   STATS SECTION
+   ============================================= */
+.stats-section {
+    background: linear-gradient(135deg, #1a1a3e, #0d0d2b);
+    background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.stat-number {
+    font-weight: 800;
+}
+
+/* =============================================
+   PAGE HEADER (halaman dalam)
+   ============================================= */
+.page-header {
+    min-height: 250px;
+    padding: 60px 0;
+}
+
+/* =============================================
+   FILTER BUTTONS
+   ============================================= */
+.filter-btn {
+    border-radius: 30px !important;
+    padding: 8px 24px !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: #0d6efd !important;
+    color: white !important;
+}
+
+/* =============================================
+   COURSE CARDS
+   ============================================= */
+.course-card {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0,0,0,0.04);
+    background: white;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.08);
+}
+
+.course-card .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* =============================================
+   FORM STYLING
+   ============================================= */
+.form-control, .form-select {
+    border-radius: 12px;
+    padding: 12px 16px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #4A6CF7;
+    box-shadow: 0 0 0 4px rgba(74, 108, 247, 0.1);
+}
+
+/* =============================================
+   ANIMATIONS
+   ============================================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 768px) {
+    .hero-wrapper {
+        min-height: 80vh;
+        padding: 40px 0;
+    }
+    .hero-wrapper h1 {
+        font-size: 2rem;
+    }
+    .stat-number {
+        font-size: 2rem !important;
+    }
+}
+
+/* =============================================
+   UTILITY
+   ============================================= */
+.hover-text-warning:hover {
+    color: #ffc107 !important;
+    transition: color 0.3s ease;
+}
+
+.text-white-50 {
+    color: rgba(255,255,255,0.5) !important;
+}
+
+.bg-opacity-10 {
+    --bs-bg-opacity: 0.1;
+}
